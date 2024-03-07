@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="Black">
+    <option name="executionMode" value="BINARY" />
+    <option name="pathToExecutable" value="D:\Envirment\Anaconda\Scripts\black.exe" />
+    <option name="sdkUUID" value="e3ad0a6f-abc9-474a-b905-8456e6de192a" />
+  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (Traffic_Analyze)" project-jdk-type="Python SDK" />
 </project>
