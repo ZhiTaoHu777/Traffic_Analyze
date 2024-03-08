@@ -45,9 +45,6 @@ def statistic(data, time_range=None, time_granularity=1, selected_atr=[], condit
             raise ValueError(f"列名{key}无效")
         # 通过列的取值过滤数据
         data = data[data[key].isin(value)]
-
-
-
     if time_range:
         start_time, end_time = map(convert_datetime_to_datetime_obj, time_range)
         print(start_time, end_time)
@@ -79,13 +76,10 @@ def statistic(data, time_range=None, time_granularity=1, selected_atr=[], condit
         xticks_labels = [time.split(' ')[1] for time in grouped_data['时间段']]
         plt.xticks(range(len(grouped_data)), xticks_labels, rotation=45)
     plt.show()
-
     return grouped_data
 
 
 # 统计功能需求2:绘制如在车牌种类、车牌颜色、采集设备或无条件关于车流量的时间函数统计
-
-
 if __name__ == "__main__":
     data = load_data()
     time_range = ['2024-03-06 06:00', '2024-03-06 09:00']
